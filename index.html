@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set the character set and viewport for better rendering on different devices -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Set the title of the page -->
+    <title>أوقات الصلاة</title>
+    <!-- Preconnect to Google Fonts and load selected fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize.css for consistent styling across browsers -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- Custom styles for the page -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main container with a calculated height -->
+    <div style="height: calc(100vdh - 3.5rem)">
+      <div style="margin-top: 3.5rem">
+        <!-- CITY NAME + DATE -->
+        <div style="color: white; margin-right: 2.5rem">
+          <!-- City name and date display -->
+          <h1 id="city-name" style="margin-bottom: 1rem">أسوان</h1>
+          <h6 style="font-size: 2rem; font-weight: 200" id="date"></h6>
+        </div>
+        <!-- Horizontal line separator -->
+        <hr style="margin: 0 2.5rem; border-color: #5200e1" />
+        <!-- CITY NAME + DATE -->
+
+        <!-- PRAYER TIMES -->
+        <div
+          class="center"
+          style="height: 10rem; margin-top: 3rem; justify-content: space-around"
+        >
+          <!-- Individual prayer time cards -->
+          <!-- CARD for Fajr prayer -->
+          <div class="card">
+            <div class="header">
+              <h1>الفجر</h1>
+            </div>
+            <div class="body center" style="height: 80%">
+              <h1 class="time" id="fajr-time"></h1>
+            </div>
+          </div>
+          <!-- CARD for Sunrise -->
+          <div class="card">
+            <div class="header">
+              <h1>الشروق</h1>
+            </div>
+            <div class="body center" style="height: 80%">
+              <h1 class="time" id="sunset-time"></h1>
+            </div>
+          </div>
+          <!-- CARD for Dhuhr prayer -->
+          <div class="card">
+            <div class="header">
+              <h1>الظهر</h1>
+            </div>
+            <div class="body center" style="height: 80%">
+              <h1 class="time" id="dhuhr-time"></h1>
+            </div>
+          </div>
+          <!-- CARD for Asr prayer -->
+          <div class="card">
+            <div class="header">
+              <h1>العصر</h1>
+            </div>
+            <div class="body center" style="height: 80%">
+              <h1 class="time" id="asr-time"></h1>
+            </div>
+          </div>
+          <!-- CARD for Maghrib prayer -->
+          <div class="card">
+            <div class="header">
+              <h1>المغرب</h1>
+            </div>
+            <div class="body center" style="height: 80%">
+              <h1 class="time" id="maghrib-time"></h1>
+            </div>
+          </div>
+          <!-- CARD for Isha prayer -->
+          <div class="card">
+            <div class="header">
+              <h1>العشاء</h1>
+            </div>
+            <div class="body center" style="height: 80%">
+              <h1 class="time" id="isha-time"></h1>
+            </div>
+          </div>
+          <!-- Individual prayer time cards -->
+        </div>
+        <!-- PRAYER TIMES -->
+
+        <!-- CHANGE CITY SELECT -->
+        <div class="center" style="margin: 2rem 0 0.5rem 0">
+          <select name="" id="cities-select"></select>
+        </div>
+        <!-- CHANGE CITY SELECT -->
+      </div>
+    </div>
+    <!-- Include the Axios library for making HTTP requests -->
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <!-- Include the custom JavaScript file for page functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>
