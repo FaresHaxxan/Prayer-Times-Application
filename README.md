@@ -6,6 +6,4 @@ I designed and implemented an innovative project to determine prayer times in al
 
 The core functionality of the project was implemented using JavaScript, where I dynamically populated a dropdown list with city names, fetched prayer timings from an external API based on the selected city, and updated the content on the page accordingly. The use of asynchronous requests and handling API responses demonstrated proficiency in modern web development practices.
 
-Additionally, I prioritized accessibility by incorporating semantic HTML elements and ARIA attributes, ensuring the project is usable and navigable for individuals with disabilities. The project reflects my commitment to creating inclusive and user-friendly web applications.
-
 This undertaking not only showcases technical skills in front-end development but also underscores my dedication to delivering projects that are both functional and accessible.
