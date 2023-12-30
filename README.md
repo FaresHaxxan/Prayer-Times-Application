@@ -1,4 +1,4 @@
-# Prayer TimesApplication
+# Prayer Times Application
 
 **Prayer Times Project using HTML, CSS, and JavaScript**
 
